@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<meta charset="utf-8">
+<link style="text/css" rel="stylesheet" href="apps.css"/>
+<head>
+
+	<title>Box Model</title>
+	<div class="menu">
+	  <ul>
+	    <li><a href="index.html">HTML CSS</a></li>
+	    <li><a href="BoxM.html">Box Model</a></li>
+	    <li><a href="SoC.html">Separation of concern</a></li>
+	    <li><a href="DRY.html">DRY</a></li>
+	  </ul>
+	</div>
+</head>
+<body>
+	<div class="contenu">
+<h1><center>Comprendre Box Model</center></h1>
+<h3>Le modèle de boite!</h3>
+
+<p>
+Ce modèle découle du fait que les éléments HTML sont pour la plupart des boîtes et que CSS utilise ces boîtes pour les agencer dans votre mise en page. Un élément HTML typique comporte une largeur et une hauteur qui définissent la surface de son contenu, et cette surface est elle-même enveloppée dans des padding, des bordures et des marges, comme on le voir sur cette illustration :</p>
+	<img src="https://la-cascade.io/content/images/2013/Dec/boxmodel-1.png"/>
+	<p>Notez la relation entre ces propriétés : nous avons d'abord le contenu (Content), défini par sa largeur et sa hauteur, que cette dernière soit automatique ou spécifiée elle est toujours là. Puis il y a le padding, suivi de la bordure, suivi de la marge. Voici une définition plus précise de chacun de ces éléments :
+
+<br>Content : le contenu, c'est à dire le texte ou l'image
+Padding : crée un espace autour du contenu. Cet espace a le même background que la boîte Content.</br>
+<br>Border : une bordure qui entoure le contenu et son padding. Elle peut avoir elle-même son propre background, son épaisseur, sa texture, ses motifs.</br>
+<br>Margin : la marge crée un espace autour des éléments précédents, cet espace est toujours transparent et n'est jamais affecté par les background de ces éléments.</br>
+
+<br>Quand nous définissons les dimensions d'un élément, nous ne définissons en fait que les largeur et hauteur du contenu. Pour calculer la largeur et la hauteur totales de cet élément, nous devons aussi inclure le padding, la bordure et la marge.</br>
+</p>
+</div>
+</body>
+</html>
